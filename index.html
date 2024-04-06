@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaïa - Des liens fertiles pour une terre solidaire</title>
+
+    <link rel="icon" type="image/png" href="cropped-gaia-favicon-300x300.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu-mobile.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__logo" src="gaia.svg" alt="" srcset="">
+        <span class="textual-logo" style="display: none;">Gaïa</span>
+
+        <!-- see menu-mobile.css -->
+        <div id="menuToggle">
+            <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+            <input type="checkbox" />
+
+            <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+            <ul id="menu" class="header__links">
+                <li class="header__link"><a href="#hi">Le projet Gaïa</a></li>
+                <li class="header__link"><a href="">Actualités</a></li>
+                <li class="header__link"><a href="">Nos Jardins</a></li>
+                <li class="header__link"><a href="">Nous Rejoindre</a></li>
+                <li class="header__link"><a href="">Nous Contacter</a></li>
+            </ul>
+        </div>
+
+        <div class="header__button-area">
+            <div class="button button--important">Faire un don</div>
+        </div>
+    </header>
+    <main>
+        <section class="hero full-width">
+            <div class="title">
+                <h1>Gaïa</h1>
+                <h2>Des liens fertiles pour une terre solidaire</h2>
+                <span>Gaïa est une association basée à Lyon qui œuvre à créer du lien social par l'agriculture
+                    urbaine</span>
+            </div>
+        </section>
+        <section class="main-card actualite">
+            <h2>A la une</h2>
+            <div class="derniere-actualite">
+                <h3>C'est la rentrée </h3>
+                <div class="date">07/09/23</div>
+                <img class="attachment-post-thumbnail" src="image actualite ancien site gaia.jpg" alt="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa pariatur consectetur sit hic at
+                architecto
+                eligendi tempora ducimus perspiciatis. Numquam architecto eius omnis maiores quis animi est! Vitae, fuga
+                debitis.
+                <div id="hi">Hi!</div>
+                Quod expedita, dignissimos repudiandae est dolorum quidem magni, atque deserunt libero maxime ipsa
+                ducimus
+            </div>
+            <div class="center-content">
+                <div class="button plus-actualite">+ d'actualités</div>
+            </div>
+        </section>
+
+        <section class="main-card evenements">
+            <h2>Evènements</h2>
+            <div class="evenements-list">
+                <div class="evenement">
+                    <img class="evenement__image" src="https://placehold.co/100" alt="">
+                    <div class="evenement__description">
+                        <div class="evenement__date">
+                            01/01/2000, 12:00
+                        </div>
+                        <h4 class="evenement__titre">
+                            Titre de l'évènement
+                        </h4>
+                    </div>
+                </div>
+                <div class="evenement">
+                    <img class="evenement__image" src="https://placehold.co/200" alt="">
+                    <div class="evenement__description">
+                        <div class="evenement__date">
+                            01/01/2000, 12:00
+                        </div>
+                        <h4 class="evenement__titre">
+                            Titre de l'évènement
+                        </h4>
+                    </div>
+                </div>
+                <div class="evenement">
+                    <img class="evenement__image" src="https://placehold.co/300" alt="">
+                    <div class="evenement__description">
+                        <div class="evenement__date">
+                            01/01/2000, 12:00
+                        </div>
+                        <h4 class="evenement__titre">
+                            Titre de l'évènement qui est d'une taille plutôt longue
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="main-card__button button">+ d'évènements</div>
+        </section>
+        <section class="main-card notre-mission">
+            <h2 class="main-card__title">Notre mission</h2>
+            <div class="main-card__intro">
+                Gaïa est un Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolorum laborum fugiat
+                cum consectetur eos nemo, ipsa dolore qui blanditiis id dignissimos reprehenderit? Doloremque illum
+                accusamus, nisi dolore nam cum?
+            </div>
+            <div class="main-card__content">
+                <img src="https://placehold.co/300" alt="" class="main-card__image">
+                <div class="main-card__content-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fuga quidem debitis blanditiis
+                    voluptatibus. Harum dicta temporibus laborum fuga vitae totam dolore quaerat, quod ullam soluta non
+                    corporis, incidunt quidem.
+                    Vel recusandae optio accusamus dicta voluptate similique ea quos, sed quo? Commodi, quo? Voluptatum
+                    pariatur dolorum sint. Omnis, officiis, magnam nostrum libero odio enim, deserunt repellat
+                    asperiores
+                    doloribus ut dicta.
+                </div>
+            </div>
+            <div class="main-card__button button">+ sur notre mission</div>
+        </section>
+        <section class="full-width no-overflow">
+            <div class="center-content">
+                <div class="diamond-grid">
+                    <div class="diamond-card">
+                        <img src="mosaic20230822_145248.jpg" alt="">
+                    </div>
+                    <div class="diamond-card">
+                        <img src="mosaic20230928_155621.jpg" alt="">
+                    </div>
+                    <div class="diamond-card">
+                        <img src="mosaic20230929_151645.jpg" alt="">
+                    </div>
+                    <div class="diamond-card">
+                        <img src="mosaicphoto_5_2023-06-19_10-24-31.jpg" alt="">
+                    </div>
+                    <div class="diamond-card">
+                        <img src="mosaicCA 22 juin (18).jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-card nos-jardins">
+            <h2 class="main-card__title">Nos jardins</h2>
+            <div class="main-card__intro">
+                La Sarra - Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dolorum laborum fugiat
+                cum consectetur eos nemo, ipsa dolore qui blanditiis id dignissimos reprehenderit? Doloremque illum
+                accusamus, nisi dolore nam cum?
+            </div>
+            <div class="main-card__content">
+                <img src="https://placehold.co/300" alt="" class="main-card__image">
+                <div class="main-card__content-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fuga quidem debitis blanditiis
+                    voluptatibus. Harum dicta temporibus laborum fuga vitae totam dolore quaerat, quod ullam soluta non
+                    corporis, incidunt quidem.
+                    Vel recusandae optio accusamus dicta voluptate similique ea quos, sed quo? Commodi, quo? Voluptatum
+                    pariatur dolorum sint. Omnis, officiis, magnam nostrum libero odio enim, deserunt repellat
+                    asperiores
+                    doloribus ut dicta.
+                </div>
+            </div>
+            <div class="main-card__button button">+ de jardins</div>
+        </section>
+        <section class="main-card chiffres-cles">
+            <h2>Chiffres clés</h2>
+            <div class="chiffres-cles__list">
+                <div class="chiffre-cle">
+                    <span class="chiffre-cle__chiffre">99</span>
+                    <span class="chiffre-cle__description">jardins</span>
+                </div>
+                <div class="chiffre-cle">
+                    <span class="chiffre-cle__chiffre">123</span>
+                    <span class="chiffre-cle__description">adhérents</span>
+                </div>
+                <div class="chiffre-cle">
+                    <span class="chiffre-cle__chiffre">1234</span>
+                    <span class="chiffre-cle__description">litres de café</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <span class="textual-logo">Gaïa</span>
+        <div class="separation-line"></div>
+        <ul class="footer__links">
+            <li class="footer__link"><a href="#hi">Mentions légales</a></li>
+            <li class="footer__link"><a href="">Nous contacter</a></li>
+        </ul>
+        <div class="social-media">
+            <a href=""><img src="flat_squared_facebook.png" alt=""></a>
+            <a href=""><img src="flat_squared_instagram.png" alt=""></a>
+            <a href=""><img src="flat_squared_linkedin.png" alt=""></a>
+        </div>
+    </footer>
+    <section class="design-tests" style="border: 2px dashed black;">
+        <h5>Variations design</h5>
+        <div style="color:red; font-weight:bold; font-size: 1.25em;" id="low-contrast">
+            Attention contraste du texte par rapport à l'arrière plan insuffisant (Accessibilité)
+        </div>
+        <fieldset>
+            <legend>Couleur de fond</legend>
+            <div>
+                <label><input type="radio" name="color" checked> Aucun
+            </div>
+            <div>
+                <label><input type="radio" name="color" id="dt-color1"> Test 1 : couleur fond jaune vert
+                </label>
+            </div>
+            <div>
+                <label><input type="radio" name="color" id="dt-color2"> Test 2 : couleur fond jaune vert (alternatif)
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Texte</legend>
+            <div>
+                <label><input type="radio" name="text" checked> Noir
+                </label>
+            </div>
+            <div><label>
+                    <input type="radio" name="text" id="dt-text1"> Test 1: Bleu foncé
+                </label>
+            </div>
+            <div><label>
+                    <input type="radio" name="text" id="dt-text2"> Test 2: Vert
+                </label>
+            </div>
+            <div><label>
+                    <input type="radio" name="text" id="dt-text3"> Test 3: Gris foncé
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Bouton</legend>
+            <div>
+                <div>
+                    <label>
+                        <input type="radio" name="bouton" checked> Couleur du texte
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="radio" name="bouton" id="dt-bouton-1"> Test 1: Vert
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Logo en-tête</legend>
+            <div>
+                <label>
+                    <input type="radio" name="logo" checked>
+                    Logo 1
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="logo" id="dt-logo-1">
+                    Logo 2
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="logo" id="dt-logo-2">
+                    Logo 3
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Image fond début de page (section "hero")</legend>
+            <div>
+                <label>
+                    <input type="radio" name="hero-fond" checked>
+                    Option 1
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="hero-fond" id="dt-hero-fond-1">
+                    Option 2
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="hero-fond" id="dt-hero-fond-2">
+                    Option 3
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="hero-fond" id="dt-hero-fond-3">
+                    Option 4
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="hero-fond" id="dt-hero-fond-4">
+                    Option 5
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Police d'écriture</legend>
+            <div>
+                <label>
+                    <input type="radio" name="font" checked> <a
+                        href="https://fonts.google.com/specimen/Montserrat">Montserrat</a>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="font" id="dt-font-1">
+                    <a href="https://www.luciole-vision.com/">Luciole</a>
+                    "Conçu spécifiquement pour les personnes malvoyantes. Le projet a bénéficié de l'appui du
+                    laboratoire
+                    DIPHE de l'Université Lumière Lyon 2."
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="font" id="dt-font-2">
+                    Futura Light
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="font" id="dt-font-3">
+                    Futura Regular
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Fleurs</legend>
+            <div>
+                <label>
+                    <input type="radio" name="fleurs" checked>
+                    Pas de fleurs
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="fleurs" id="dt-fleurs-1">
+                    Fleurs
+                </label>
+            </div>
+        </fieldset>
+    </section>
+</body>
+
+</html>
