@@ -281,6 +281,46 @@ main>*:not(.full-width) {
     overflow: hidden;
 }
 
+
+.button {
+    display: inline-block;
+
+    font-weight: bold;
+    padding: .5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 100vw;
+
+    /* line around the button when hover/focus */
+    border: .2rem solid var(--color-button);
+    background-color: var(--color-button);
+    color: var(--color-button-background);
+
+    text-decoration: none;
+    text-align: center;
+
+    transition: color 0.3s ease;
+
+    min-width: 6em;
+}
+
+.button--important {
+    background-color: var(--color-button-don);
+    border-color: var(--color-button-don);
+    color: var(--color-button-background);
+}
+
+.button:hover,
+.button:focus {
+    background-color: transparent;
+    color: var(--color-button);
+}
+
+.button--important:hover,
+.button--important:focus {
+    color: var(--color-button-don);
+}
+
+
 /* prevent top of content being hidden when clicking an internal link
 (for menu with position fixed) */
 html {
@@ -351,45 +391,13 @@ main {
     font-size: var(--fs-small);
 }
 
-
-
-.button {
-    display: inline-block;
-
-    font-weight: bold;
-    padding: .5rem 1rem;
-    margin-top: 1rem;
-    border-radius: 100vw;
-
-    /* line around the button when hover/focus */
-    border: .2rem solid var(--color-button);
-    background-color: var(--color-button);
-    color: var(--color-button-background);
-
-    text-decoration: none;
-    text-align: center;
-
-    transition: color 0.3s ease;
-
-    min-width: 6em;
+.header__button-area>.button {
+    margin-top: 0;
 }
 
-.button--important {
-    background-color: var(--color-button-don);
-    border-color: var(--color-button-don);
-    color: var(--color-button-background);
-}
 
-.button:hover,
-.button:focus {
-    background-color: transparent;
-    color: var(--color-button);
-}
 
-.button--important:hover,
-.button--important:focus {
-    color: var(--color-button-don);
-}
+
 
 
 
@@ -513,31 +521,41 @@ main>section {
     width: 100%;
 }
 
+.main-card__content-text>*+p {
+    margin-top: 1em;
+}
+
 .main-card__content-text li {
     margin-block: .75em;
 }
 
 
 @media(min-width: 767px) {
-    .main-card {
+
+    .main-card,
+    .main-card__content {
         /* clearfix (creates a BFC) */
         display: flow-root;
     }
 
     .main-card__content {
-        display: flex;
-        flex-direction: row-reverse;
-        gap: 1rem;
+        /* display: flex; */
+        /* flex-direction: row-reverse; */
+        /* gap: 1rem; */
     }
 
     .main-card__image {
         width: unset;
+        float: right;
+        margin: 1em;
+        margin-top: 0;
     }
 
     /* must be below other main-card__content declaration otherwise will
     will not be applied due to being lower in the cascade */
     .main-card__content--reverse {
-        flex-direction: row;
+        /* flex-direction: row; */
+        float: left;
     }
 
     .main-card__content--rows-3 {
@@ -545,6 +563,7 @@ main>section {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 1em;
     }
 
     .main-card__content--rows-3>* {
