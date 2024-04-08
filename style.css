@@ -51,6 +51,7 @@
     --color-background: white;
     --color-link-highlight: var(--color-green);
     --text-color: black;
+    --text-color-lighter: #666;
     --hero-text-color: white;
 
     --text-shadow-black: 2px 2px 3px rgba(10, 10, 10, 0.7),
@@ -238,6 +239,8 @@ input {
 }
 
 
+
+
 h1 {
     font-size: var(--fs-xxl);
 }
@@ -355,7 +358,7 @@ main {
 
     font-weight: bold;
     padding: .5rem 1rem;
-    /* margin-top: 1rem; */
+    margin-top: 1rem;
     border-radius: 100vw;
 
     /* line around the button when hover/focus */
@@ -510,6 +513,11 @@ main>section {
     width: 100%;
 }
 
+.main-card__content-text li {
+    margin-block: .75em;
+}
+
+
 @media(min-width: 767px) {
     .main-card {
         /* clearfix (creates a BFC) */
@@ -525,7 +533,33 @@ main>section {
     .main-card__image {
         width: unset;
     }
+
+    /* must be below other main-card__content declaration otherwise will
+    will not be applied due to being lower in the cascade */
+    .main-card__content--reverse {
+        flex-direction: row;
+    }
+
+    .main-card__content--rows-3 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-card__content--rows-3>* {
+        /* add a min-width to element to prevent issues */
+        flex-basis: 30%;
+    }
 }
+
+@media(max-width: 768px) {
+    .main-card__content--rows-3>* {
+        /* to replace the gap that only exist in desktop mode (see above) */
+        margin: 1rem;
+    }
+}
+
 
 
 .evenements-list {
@@ -645,6 +679,130 @@ https://www.youtube.com/watch?v=A5GXdjEOvos */
 .chiffre-cle {
     display: inline;
 }
+
+
+
+
+.testimony-card {
+    --border-size: 2px;
+    border: var(--border-size) solid;
+    padding: .25em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.testimony-card:before {
+    content: "⠦";
+    position: absolute;
+    top: calc(100% - 1.2em);
+    left: calc(50% - .5em);
+}
+
+.testimony-card__headshot {
+    border-radius: 10000px;
+    width: 30%;
+    /* margin-inline: auto; */
+    margin-top: 2em;
+}
+
+.testimony-card__name {
+    font-weight: bold;
+    ;
+}
+
+.testimony-card__role {
+    font-size: var(--fs-small);
+}
+
+/* <span class="testimony-card__quote-symbol">❝</span> */
+/* .testimony-card__quote-symbol {
+    font-size: 5em;
+    float: left;
+    align-self: start;
+
+    line-height: 0.25;
+    margin-top: 2.5rem;
+    margin-left: 1rem;
+} */
+
+.testimony-card__testimony:before {
+    content: '❝';
+    font-size: 5em;
+    float: left;
+    align-self: start;
+
+    /* values determined by fiddling until it looked good*/
+    line-height: 0.2;
+    /* margin-top: 2.5rem; */
+    margin-left: 1rem;
+}
+
+.testimony-card__testimony {
+    color: var(--text-color-lighter);
+    font-size: var(--fs-small);
+    text-align: center;
+    margin-bottom: 1em;
+    margin-inline: 1em;
+    margin-top: 4em;
+}
+
+
+
+
+
+
+.partner {
+    border: 2px solid;
+    padding: .25em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* margin: 1em; */
+
+
+.partner__logo {
+    border-radius: 10000px;
+    width: 30%;
+    /* margin-inline: auto; */
+    margin-top: 2em;
+}
+
+.partner__name {
+    font-weight: bold;
+    ;
+}
+
+.partner__testimony:before {
+    content: '❝';
+    font-size: 5em;
+    float: left;
+    align-self: start;
+
+    /* values determined by fiddling until it looked good*/
+    line-height: 0.2;
+    /* margin-top: 2.5rem; */
+    margin-left: 1rem;
+}
+
+.partner__testimony {
+    color: var(--text-color-lighter);
+    font-size: var(--fs-small);
+    text-align: center;
+    margin-bottom: 1em;
+    margin-inline: 1em;
+    margin-top: 4em;
+}
+
+
+
+
 
 
 

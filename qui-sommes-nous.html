@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaïa - Des liens fertiles pour une terre solidaire</title>
+
+    <link rel="icon" type="image/png" href="cropped-gaia-favicon-300x300.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu-mobile.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__logo" src="gaia.svg" alt="" srcset="">
+        <span class="textual-logo" style="display: none;">Gaïa</span>
+
+        <!-- see menu-mobile.css -->
+        <div id="menuToggle">
+            <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+            <input type="checkbox" />
+
+            <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+            <ul id="menu" class="header__links">
+                <li class="header__link"><a href="#hi">Le projet Gaïa</a></li>
+                <li class="header__link"><a href="">Actualités</a></li>
+                <li class="header__link"><a href="">Nos Jardins</a></li>
+                <li class="header__link"><a href="">Nous Rejoindre</a></li>
+                <li class="header__link"><a href="">Nous Contacter</a></li>
+            </ul>
+        </div>
+
+        <div class="header__button-area">
+            <div class="button button--important">Faire un don</div>
+        </div>
+    </header>
+    <main>
+
+        <h1>Qui sommes nous</h1>
+
+        <section class="main-card">
+            <h3 class="main-card__title">Notre histoire</h3>
+            <div class="main-card__content">
+                <img src="https://placehold.co/300" alt="" class="main-card__image">
+                <div class="main-card__content-text">
+                    L’association Gaïa Lyon est née en avril 2021 à la suite d’une réflexion menée pendant près d’un an
+                    par une trentaine de citoyens « éclairés » rassemblés dans un do tankLe contexte initial est le
+                    suivant : Urban Chrysalide.
+                    <br><br>
+                    <ul>
+                        <li>En 2019, 5,5 millions de personnes ont eu recours à l’aide alimentaire, près de 8 millions
+                            en 2021 (France)</li>
+                        <li>En 2022, 12 millions de Français sont sous le seuil de pauvreté (18,5% de la population)
+                        </li>
+                        <li>8 français sur 10 vivent en milieu urbain là où s’expriment l’exclusion et la précarité avec
+                            la croissance de l’obésité, de l’isolement, de la rupture de lien social, … </li>
+                    </ul>
+
+                    Le postulat de départ de ce Do Tank est le suivant : <b>
+                        pour imaginer une ville où le mieux vivre
+                        ensemble est possible les entreprises et les citoyens détiennent une part de responsabilité
+                        importante pour permettre l’émergence d’un monde plus responsable, plus solidaire, plus
+                        inclusif,
+                        plus sûr, plus sain et plus frugal
+                    </b>. Ainsi, ils ont décidé de mettre en commun leurs compétences,
+                    leurs moyens financiers et techniques, leurs expertises et leurs réseaux d’influence pour développer
+                    le projet Gaïa Lyon.
+
+                    <b>Les objectifs :</b>
+                    <ul style="list-style-type: none;">
+                        <li>- Relier la ville et son habitat à la nature,</li>
+                        <li>
+                            - Tisser des relations sociales entre celles et ceux qui ont accès à l’habitat, à l’emploi
+                            et
+                            aux services, et les exclus de toutes natures, personnes en grande précarité, SDF, migrants,
+                            personnes en situation de handicap (psychique et moteur) ... de façon intergénérationnelle
+                            et
+                            transculturelle.
+                        </li>
+                        <li>
+                            - Enfin, grâce à un dispositif multi-acteurs, éduquer les personnes aux grands enjeux
+                            agroenvironnementaux et alimentaires.
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+            <div class="main-card__content">
+                <div class="main-card__content-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fuga quidem debitis blanditiis
+                    voluptatibus. Harum dicta temporibus laborum fuga vitae totam dolore quaerat, quod ullam soluta non
+                    corporis, incidunt quidem.
+                    Vel recusandae optio accusamus dicta voluptate similique ea quos, sed quo? Commodi, quo? Voluptatum
+                    pariatur dolorum sint. Omnis, officiis, magnam nostrum libero odio enim, deserunt repellat
+                    asperiores
+                    doloribus ut dicta.
+                </div>
+            </div>
+        </section>
+
+
+        <section class="main-card">
+            <h3 class="main-card__title">Notre équipe</h3>
+            <div class="main-card__content main-card__content--rows-3">
+                <!--  " -->
+                <div class="testimony-card">
+                    <img class="testimony-card__headshot" src="emilien perret-small.jpg" alt="">
+                    <span class="testimony-card__name">John Smith</span>
+                    <span class="testimony-card__role">Rôle rôle rôle</span>
+                    <!-- alternative quote symbols “「〝 -->
+                    <!-- <span class="testimony-card__quote-symbol">❝</span> -->
+                    <span class=" testimony-card__testimony">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ipsum ea velit eius! Officia officiis accusantium, vitae molestiae at eligendi eum corporis!
+                        Necessitatibus repudiandae assumenda consequatur adipisci.</span>
+                </div>
+                <div class="testimony-card">
+                    <img class="testimony-card__headshot" src="emilien perret-small.jpg" alt="">
+                    <span class="testimony-card__name">John Smith</span>
+                    <span class="testimony-card__role">Rôle rôle rôle</span>
+                    <span class=" testimony-card__testimony">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ipsum ea velit eius! Officia officiis accusantium, vitae molestiae at eligendi eum corporis!
+                        Necessitatibus repudiandae assumenda consequatur adipisci.</span>
+                </div>
+                <div class="testimony-card">
+                    <img class="testimony-card__headshot" src="emilien perret-small.jpg" alt="">
+                    <span class="testimony-card__name">John Smith</span>
+                    <span class="testimony-card__role">Rôle rôle rôle</span>
+                    <span class=" testimony-card__testimony">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ipsum ea velit eius! Officia officiis accusantium, vitae molestiae at eligendi eum corporis!
+                        Necessitatibus repudiandae assumenda consequatur adipisci.</span>
+                </div>
+                <div class="testimony-card">
+                    <img class="testimony-card__headshot" src="emilien perret-small.jpg" alt="">
+                    <span class="testimony-card__name">John Smith</span>
+                    <span class="testimony-card__role">Rôle rôle rôle</span>
+                    <span class=" testimony-card__testimony">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ipsum ea velit eius! Officia officiis accusantium, vitae molestiae at eligendi eum corporis!
+                        Necessitatibus repudiandae assumenda consequatur adipisci.</span>
+                </div>
+                <div class="testimony-card">
+                    <img class="testimony-card__headshot" src="emilien perret-small.jpg" alt="">
+                    <span class="testimony-card__name">John Smith</span>
+                    <span class="testimony-card__role">Rôle rôle rôle</span>
+                    <span class=" testimony-card__testimony">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ipsum ea velit eius! Officia officiis accusantium, vitae molestiae at eligendi eum corporis!
+                        Necessitatibus repudiandae assumenda consequatur adipisci.</span>
+                </div>
+                <div class="testimony-card">
+                    <img class="testimony-card__headshot" src="emilien perret-small.jpg" alt="">
+                    <span class="testimony-card__name">John Smith</span>
+                    <span class="testimony-card__role">Rôle rôle rôle</span>
+                    <span class=" testimony-card__testimony">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ipsum ea velit eius! Officia officiis accusantium, vitae molestiae at eligendi eum corporis!
+                        Necessitatibus repudiandae assumenda consequatur adipisci.</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-card">
+            <h3 class="main-card__title">Nos partenaires</h3>
+            <div class="main-card__content main-card__content--rows-3">
+                <div class="partner">
+                    <img class="partner-logo" src="grand-lyon-metropole.png" alt="">
+                    <a href="javascript:void(0)" class="partner__name">Grand Lyon</a>
+                    <span class=" partner__testimony">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ipsum ea velit eius! Officia officiis accusantium, vitae molestiae at eligendi eum corporis!
+                        Necessitatibus repudiandae assumenda consequatur adipisci.</span>
+                </div>
+                <div class="partner">
+                    <img class="partner-logo" src="grand-lyon-metropole.png" alt="">
+                    <a href="javascript:void(0)" class="partner__name">Grand Lyon</a>
+                    <span class=" partner__testimony">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ipsum ea velit eius! Officia officiis accusantium, vitae molestiae at eligendi eum corporis!
+                        Necessitatibus repudiandae assumenda consequatur adipisci.</span>
+                </div>
+                <div class="partner">
+                    <img class="partner-logo" src="grand-lyon-metropole.png" alt="">
+                    <a href="javascript:void(0)" class="partner__name">Grand Lyon</a>
+                    <span class=" partner__testimony">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ipsum ea velit eius! Officia officiis accusantium, vitae molestiae at eligendi eum corporis!
+                        Necessitatibus repudiandae assumenda consequatur adipisci.</span>
+                </div>
+                <div class="partner">
+                    <img class="partner-logo" src="grand-lyon-metropole.png" alt="">
+                    <a href="javascript:void(0)" class="partner__name">Grand Lyon</a>
+                </div>
+                <div class="partner">
+                    <img class="partner-logo" src="grand-lyon-metropole.png" alt="">
+                    <a href="javascript:void(0)" class="partner__name">Grand Lyon</a>
+                </div>
+                <div class="partner">
+                    <img class="partner-logo" src="grand-lyon-metropole.png" alt="">
+                    <a href="javascript:void(0)" class="partner__name">Grand Lyon</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="main-card">
+            <h3 class="main-card__title">Nos chiffres clés</h3>
+            <div class="main-card__content">
+                <img src="https://placehold.co/300" alt="" class="main-card__image">
+                <div class="main-card__content-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fuga quidem debitis blanditiis
+                    voluptatibus. Harum dicta temporibus laborum fuga vitae totam dolore quaerat, quod ullam soluta non
+                    corporis, incidunt quidem.
+                    <br><br>
+                    <ul>
+                        <li>Xxxx xxxx</li>
+                        <li>Xxxx xxxx</li>
+                        <li>Xxxx xxxx</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="main-card__content">
+                <div class="main-card__content-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fuga quidem debitis blanditiis
+                    voluptatibus. Harum dicta temporibus laborum fuga vitae totam dolore quaerat, quod ullam soluta non
+                    corporis, incidunt quidem.
+                    Vel recusandae optio accusamus dicta voluptate similique ea quos, sed quo? Commodi, quo? Voluptatum
+                    pariatur dolorum sint. Omnis, officiis, magnam nostrum libero odio enim, deserunt repellat
+                    asperiores
+                    doloribus ut dicta.
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+    <footer>
+        <span class="textual-logo">Gaïa</span>
+        <div class="separation-line"></div>
+        <ul class="footer__links">
+            <li class="footer__link"><a href="#hi">Mentions légales</a></li>
+            <li class="footer__link"><a href="">Nous contacter</a></li>
+        </ul>
+        <div class="social-media">
+            <a href=""><img src="flat_squared_facebook.png" alt=""></a>
+            <a href=""><img src="flat_squared_instagram.png" alt=""></a>
+            <a href=""><img src="flat_squared_linkedin.png" alt=""></a>
+        </div>
+    </footer>
+    <section class="design-tests" style="border: 2px dashed black;">
+        <h5>Variations design</h5>
+        <div style="color:red; font-weight:bold; font-size: 1.25em;" id="low-contrast">
+            Attention contraste du texte par rapport à l'arrière plan insuffisant (Accessibilité)
+        </div>
+        <fieldset>
+            <legend>Couleur de fond</legend>
+            <div>
+                <label><input type="radio" name="color" id="dt-color1" checked> Aucun
+                </label>
+            </div>
+            <div>
+                <label><input type="radio" name="color" id="dt-color2"> Test 1 : couleur fond jaune vert
+                </label>
+            </div>
+            <div>
+                <label><input type="radio" name="color" id="dt-color3"> Test 2 : couleur fond jaune vert (alternatif)
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Texte</legend>
+            <div>
+                <label><input type="radio" name="text" id="dt-text1" checked> Noir
+                </label>
+            </div>
+            <div><label>
+                    <input type="radio" name="text" id="dt-text2"> Test 1: Bleu foncé
+                </label>
+            </div>
+            <div><label>
+                    <input type="radio" name="text" id="dt-text3"> Test 2: Vert
+                </label>
+            </div>
+            <div><label>
+                    <input type="radio" name="text" id="dt-text4"> Test 3: Gris foncé
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Bouton</legend>
+            <div>
+                <div>
+                    <label>
+                        <input type="radio" name="bouton" id="dt-bouton-1" checked> Couleur du texte
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="radio" name="bouton" id="dt-bouton-2"> Test 1: Vert
+                    </label>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Logo en-tête</legend>
+            <div>
+                <label>
+                    <input type="radio" name="logo" id="dt-logo-1" checked>
+                    Logo 1
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="logo" id="dt-logo-2">
+                    Logo 2
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="logo" id="dt-logo-3">
+                    Logo 3
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Image fond début de page (section "hero")</legend>
+            <div>
+                <label>
+                    <input type="radio" name="hero-fond" id="dt-hero-fond-1" checked>
+                    Option 1
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="hero-fond" id="dt-hero-fond-2">
+                    Option 2
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="hero-fond" id="dt-hero-fond-3">
+                    Option 3
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="hero-fond" id="dt-hero-fond-4">
+                    Option 4
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="hero-fond" id="dt-hero-fond-5">
+                    Option 5
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="hero-fond" id="dt-hero-fond-6">
+                    Option 6
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Police d'écriture</legend>
+            <div>
+                <label>
+                    <input type="radio" name="font" id="dt-font-1" checked> <a
+                        href="https://fonts.google.com/specimen/Montserrat">Montserrat</a>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="font" id="dt-font-2">
+                    <a href="https://www.luciole-vision.com/">Luciole</a>
+                    "Conçu spécifiquement pour les personnes malvoyantes. Le projet a bénéficié de l'appui du
+                    laboratoire
+                    DIPHE de l'Université Lumière Lyon 2."
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="font" id="dt-font-3">
+                    Futura Light
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="font" id="dt-font-4">
+                    Futura Regular
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Fleurs</legend>
+            <div>
+                <label>
+                    <input type="radio" name="fleurs" id="dt-fleurs-1" checked>
+                    Pas de fleurs
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="fleurs" id="dt-fleurs-2">
+                    Fleurs
+                </label>
+            </div>
+        </fieldset>
+    </section>
+    <script>
+        for (let [name,] of new URLSearchParams(window.location.search)) {
+            console.log(document.getElementById(name));
+            document.getElementById(name).checked = true;;
+        }
+    </script>
+</body>
+
+</html>
