@@ -1,4 +1,4 @@
-@media not (max-width: 800px) {
+@media not (max-width: 767px) {
 
     /* disable mobile menu on desktop */
     #menuToggle> :not(#menu) {
@@ -7,7 +7,7 @@
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
 
     .header__links {
         flex-direction: column;

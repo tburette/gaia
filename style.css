@@ -1,4 +1,4 @@
-/* @media (max-width: 800px) is the breakpoinr for mobile */
+/* @media (max-width: 767px) is the breakpoinr for mobile */
 /* if want to change the value: must change everywhere in this file and menu-mobile.css! */
 
 @font-face {
@@ -98,11 +98,11 @@ input {
     height: 1.1em;
 }
 
-:root:has(#dt-color1:checked) {
+:root:has(#dt-color2:checked) {
     --color-background: var(--color-light-yellow);
 }
 
-:root:has(#dt-color1:checked) main>:nth-child(even of .main-card) {
+:root:has(#dt-color2:checked) main>:nth-child(even of .main-card) {
     background-color: var(--color-light-green);
     /* border-inline: 200px solid var(--color-light-green); */
     /* border */
@@ -111,11 +111,11 @@ input {
 
 
 
-:root:has(#dt-color2:checked) {
+:root:has(#dt-color3:checked) {
     --color-background: var(--color-pale-yellow);
 }
 
-:root:has(#dt-color2:checked) main>:nth-child(even of .main-card) {
+:root:has(#dt-color3:checked) main>:nth-child(even of .main-card) {
     background-color: var(--color-pale-green);
     /* border-inline: 200px solid var(--color-light-green); */
     /* border */
@@ -124,19 +124,19 @@ input {
 
 
 /* text tests */
-:root:has(#dt-text1:checked) {
+:root:has(#dt-text2:checked) {
     --text-color: var(--color-dark-blue);
 }
 
-:root:has(#dt-text2:checked) {
+:root:has(#dt-text3:checked) {
     --text-color: var(--color-green);
 }
 
-:root:has(#dt-text3:checked) {
+:root:has(#dt-text4:checked) {
     --text-color: #555;
 }
 
-:root:has(#dt-color1:checked, #dt-color2:checked):has(#dt-text2:checked) #low-contrast {
+:root:has(#dt-color2:checked, #dt-color3:checked):has(#dt-text3:checked) #low-contrast {
     /* visibility: visible; */
     display: block;
 }
@@ -149,41 +149,41 @@ input {
 
 
 /* button tests */
-:root:has(#dt-bouton-1:checked) {
+:root:has(#dt-bouton-2:checked) {
     --color-button: var(--color-green);
 }
 
 
 /* logo tests */
-:root:has(#dt-logo-1:checked) .header__logo {
+:root:has(#dt-logo-2:checked) .header__logo {
     content: url(./gaia-menu.svg)
 }
 
-:root:has(#dt-logo-2:checked) .header__logo {
+:root:has(#dt-logo-3:checked) .header__logo {
     display: none;
 }
 
-:root:has(#dt-logo-2:checked) .textual-logo {
+:root:has(#dt-logo-3:checked) .textual-logo {
     /* override inline style */
     display: inline !important;
 }
 
 
 /* hero tests */
-:root:has(#dt-hero-fond-1:checked) .hero {
+:root:has(#dt-hero-fond-2:checked) .hero {
     background-image: url('jonathan-hanna-hvSBya7hX2Q-unsplash-medium.jpg');
 }
 
-:root:has(#dt-hero-fond-2:checked) .hero {
+:root:has(#dt-hero-fond-3:checked) .hero {
     background-image: url('markus-spiske-bk11wZwb9F4-unsplash-medium.jpg');
 }
 
 
-:root:has(#dt-hero-fond-3:checked) .hero {
+:root:has(#dt-hero-fond-4:checked) .hero {
     background-image: url('markus-winkler-HeqXGxnsnX4-unsplash-medium.jpg');
 }
 
-:root:has(#dt-hero-fond-4:checked) .hero {
+:root:has(#dt-hero-fond-5:checked) .hero {
     background-image: url('heroDefault_in_the_foreground_vegetables_growing_in_a_vegetable_pa_2.jpg');
 }
 
@@ -191,44 +191,44 @@ input {
 
 
 /* font tests */
-:root:has(#dt-font-1:checked) {
+:root:has(#dt-font-2:checked) {
     font-family: "Luciole", sans-serif;
     font-weight: 400;
 }
 
-:root:has(#dt-font-2:checked) {
+:root:has(#dt-font-3:checked) {
     font-family: "FuturaRennerLight", sans-serif;
     font-size: 1.05rem;
 }
 
-:root:has(#dt-font-3:checked) {
+:root:has(#dt-font-4:checked) {
     font-family: "FuturaRennerRegular", sans-serif;
     /* font-size: 1.05rem; */
 }
 
 
 /* fleurs tests */
-:root:has(#dt-fleurs-1:checked) .main-card:nth-child(4n) {
+:root:has(#dt-fleurs-2:checked) .main-card:nth-child(4n) {
     background-image: url("gaia-illus3-short.png");
     /* background-position: bottom right; */
     background-repeat: no-repeat;
     background-size: 30%;
 }
 
-:root:has(#dt-fleurs-1:checked) .main-card:nth-child(4n+1) {
+:root:has(#dt-fleurs-2:checked) .main-card:nth-child(4n+1) {
     background-image: url("gaia-illus1-short.png");
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: 30%;
 }
 
-:root:has(#dt-fleurs-1:checked) .main-card:nth-child(4n+2) {
+:root:has(#dt-fleurs-2:checked) .main-card:nth-child(4n+2) {
     background-image: url("gaia-illus2-short.png");
     background-repeat: no-repeat;
     background-size: 30%;
 }
 
-:root:has(#dt-fleurs-1:checked) .main-card:nth-child(4n+3) {
+:root:has(#dt-fleurs-2:checked) .main-card:nth-child(4n+3) {
     background-image: url("gaia-illus3-center-short.png");
     background-position: top center;
     background-repeat: no-repeat;
@@ -236,7 +236,7 @@ input {
 }
 
 
-*/ */ h1 {
+h1 {
     font-size: var(--fs-xxl);
 }
 
@@ -319,7 +319,7 @@ main {
     padding-inline: 1rem;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
     .header__links {
         font-size: calc(var(--fs-normal) * 1.1);
     }
@@ -441,7 +441,7 @@ main>section {
     text-align: center;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
     .title {
         padding-inline: 1.5rem;
     }
@@ -475,7 +475,7 @@ main>section {
     display: inline-block;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 767px) {
     .derniere-actualite {
         /* clearfix (creates a BFC) */
         display: flow-root;
@@ -508,7 +508,7 @@ main>section {
     width: 100%;
 }
 
-@media(min-width: 800px) {
+@media(min-width: 767px) {
     .main-card {
         /* clearfix (creates a BFC) */
         display: flow-root;

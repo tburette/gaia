@@ -1,5 +1,6 @@
 ---
 design homepage:
+- meilleur font 'thin'
 - images evenements
     48h de l'agriculture urbaine
     nuit innovation
