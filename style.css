@@ -187,8 +187,10 @@ input {
     background-image: url('heroDefault_in_the_foreground_vegetables_growing_in_a_vegetable_pa_2.jpg');
 }
 
+:root:has(#dt-hero-fond-6:checked) .hero {
+    background-image: url('mosaic20230928_155621.jpg');
 
-
+}
 
 /* font tests */
 :root:has(#dt-font-2:checked) {
