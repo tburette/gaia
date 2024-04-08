@@ -594,14 +594,19 @@ https://www.youtube.com/watch?v=A5GXdjEOvos */
     object-fit: cover;
     width: calc(var(--size) * 2);
     height: calc(var(--size) * 2);
-    /* clip-path: path("M90,10 C100,0 100,0 110,10 190,90 190,90 190,90 200,100 200,100 190,110 190,110 110,190 110,190 100,200 100,200 90,190 90,190 10,110 10,110 0,100 0,100 10,90Z"); */
-    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
-    ;
+    clip-path: path("M90,10 C100,0 100,0 110,10 190,90 190,90 190,90 200,100 200,100 190,110 190,110 110,190 110,190 100,200 100,200 90,190 90,190 10,110 10,110 0,100 0,100 10,90Z");
+    /* 
+    alternative that gives each diamond the same size in mobile and desktop (but slower/blurrier)
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); 
+    clip-path: rect(15% 15% 85% 85% round 5%); 
+    transform: rotate(45deg); 
+    +
+        .diamond-grid --size: 20vw;
+        .diamond-card>img transform: rotate(-45deg);
+         */
     transition: clip-path 0.75s, filter 0.9s;
     grid-column: auto / span 2;
     border-radius: 5px;
-
-
 }
 
 .diamond-card>img {
@@ -610,7 +615,6 @@ https://www.youtube.com/watch?v=A5GXdjEOvos */
     height: 100%;
     aspect-ratio: 1;
     object-fit: cover;
-
 }
 
 .diamond-grid .diamond-card:nth-child(5n - 1) {
