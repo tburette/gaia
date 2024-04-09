@@ -14,7 +14,8 @@
 
 <body>
     <header class="header">
-        <img class="header__logo" src="gaia.svg" alt="" srcset="">
+        <!-- /gaia to make it work on thomasburette.com/gaia -->
+        <a href="/gaia"><img class="header__logo" src="gaia.svg" alt="Gaïa Lyon"></a>
         <span class="textual-logo" style="display: none;">Gaïa</span>
 
         <!-- see menu-mobile.css -->
@@ -40,16 +41,19 @@
               but hey, it's pure CSS magic.
               -->
             <ul id="menu" class="header__links">
-                <li class="header__link"><a href="#hi">Le projet Gaïa</a></li>
-                <li class="header__link"><a href="">Actualités</a></li>
-                <li class="header__link"><a href="">Nos Jardins</a></li>
-                <li class="header__link"><a href="">Nous Rejoindre</a></li>
-                <li class="header__link"><a href="">Nous Contacter</a></li>
+                <li class="header__link"><a href="qui-sommes-nous.html">Le projet Gaïa</a></li>
+                <li class="header__link"><a href="notre-mission.html">Notre mission</a></li>
+                <li class="header__link"><a href="/gaia#actualite">Actualités</a></li>
+                <li class="header__link"><a href="/gaia#nos-jardins">Nos Jardins</a></li>
+                <li class="header__link"><a href="nous-rejoindre.html">Nous Rejoindre</a></li>
+                <li class="header__link"><a href="nous-contacter.html">Nous Contacter</a></li>
             </ul>
         </div>
 
         <div class="header__button-area">
-            <div class="button button--important">Faire un don</div>
+            <a href="nous-contacter.html">
+                <div class="button button--important">Faire un don</div>
+            </a>
         </div>
     </header>
     <main>
@@ -66,7 +70,7 @@
                 <img src="mosaic20230928_155621.jpg" alt="" class="hero__side-image">
             </div>
         </section>
-        <section class="main-card actualite">
+        <section class="main-card" id="actualite">
             <h2>A la une</h2>
             <div class="derniere-actualite">
                 <h3>La saison des jardins maraichers Gaïa Lyon est repatrie ! </h3>
@@ -156,7 +160,9 @@
                     </p>
                 </div>
             </div>
-            <div class="main-card__button button">+ sur notre mission</div>
+            <a href="notre-mission.html">
+                <div class="main-card__button button">+ sur notre mission</div>
+            </a>
         </section>
         <section class="full-width no-overflow">
             <div class="center-content">
@@ -179,7 +185,7 @@
                 </div>
             </div>
         </section>
-        <section class="main-card nos-jardins">
+        <section class="main-card" id="nos-jardins">
             <h2 class="main-card__title">Nos jardins</h2>
             <div class="main-card__intro">
                 Présentation d'un de nos jardins : La Sarra
@@ -226,7 +232,7 @@
         <div class="separation-line"></div>
         <ul class="footer__links">
             <li class="footer__link"><a href="#hi">Mentions légales</a></li>
-            <li class="footer__link"><a href="">Nous contacter</a></li>
+            <li class="footer__link"><a href="nous-contacter.html">Nous contacter</a></li>
         </ul>
         <div class="social-media">
             <a href="https://www.facebook.com/assogaialyon/"><img src="flat_squared_facebook.png" alt=""></a>

@@ -482,7 +482,7 @@ main {
     font-size: var(--fs-small);
 }
 
-.header__button-area>.button {
+.header__button-area .button {
     margin-top: 0;
 }
 

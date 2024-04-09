@@ -43,15 +43,17 @@
             <ul id="menu" class="header__links">
                 <li class="header__link"><a href="qui-sommes-nous.html">Le projet Gaïa</a></li>
                 <li class="header__link"><a href="notre-mission.html">Notre mission</a></li>
-                <li class="header__link"><a href="">Actualités</a></li>
-                <li class="header__link"><a href="">Nos Jardins</a></li>
+                <li class="header__link"><a href="/gaia#actualite">Actualités</a></li>
+                <li class="header__link"><a href="/gaia#nos-jardins">Nos Jardins</a></li>
                 <li class="header__link"><a href="nous-rejoindre.html">Nous Rejoindre</a></li>
-                <li class="header__link"><a href="">Nous Contacter</a></li>
+                <li class="header__link"><a href="nous-contacter.html">Nous Contacter</a></li>
             </ul>
         </div>
 
         <div class="header__button-area">
-            <div class="button button--important">Faire un don</div>
+            <a href="nous-contacter.html">
+                <div class="button button--important">Faire un don</div>
+            </a>
         </div>
     </header>
     <main>
@@ -72,214 +74,212 @@
                 </a>
             </div>
         </section>
-        <footer>
-            <span class="textual-logo">Gaïa</span>
-            <div class="separation-line"></div>
-            <ul class="footer__links">
-                <li class="footer__link"><a href="#hi">Mentions légales</a></li>
-                <li class="footer__link"><a href="">Nous contacter</a></li>
-            </ul>
-            <div class="social-media">
-                <a href="https://www.facebook.com/assogaialyon/"><img src="flat_squared_facebook.png" alt=""></a>
-                <a href="https://www.linkedin.com/company/ga%C3%AFa-lyon/"><img src="flat_squared_instagram.png"
-                        alt=""></a>
-                <a href="https://www.instagram.com/associationgaialyon/"><img src="flat_squared_linkedin.png"
-                        alt=""></a>
+    </main>
+    <footer>
+        <span class="textual-logo">Gaïa</span>
+        <div class="separation-line"></div>
+        <ul class="footer__links">
+            <li class="footer__link"><a href="#hi">Mentions légales</a></li>
+            <li class="footer__link"><a href="nous-contacter.html">Nous contacter</a></li>
+        </ul>
+        <div class="social-media">
+            <a href="https://www.facebook.com/assogaialyon/"><img src="flat_squared_facebook.png" alt=""></a>
+            <a href="https://www.linkedin.com/company/ga%C3%AFa-lyon/"><img src="flat_squared_instagram.png" alt=""></a>
+            <a href="https://www.instagram.com/associationgaialyon/"><img src="flat_squared_linkedin.png" alt=""></a>
+        </div>
+    </footer>
+    <section class="design-tests" style="border: 2px dashed black;">
+        <h5>Variations design</h5>
+        <div style="color:red; font-weight:bold; font-size: 1.25em;" id="low-contrast">
+            Attention contraste du texte par rapport à l'arrière plan insuffisant (Accessibilité)
+        </div>
+        <fieldset>
+            <legend>Couleur de fond</legend>
+            <div>
+                <label><input type="radio" name="color" id="dt-color1" checked> Aucun
+                </label>
             </div>
-        </footer>
-        <section class="design-tests" style="border: 2px dashed black;">
-            <h5>Variations design</h5>
-            <div style="color:red; font-weight:bold; font-size: 1.25em;" id="low-contrast">
-                Attention contraste du texte par rapport à l'arrière plan insuffisant (Accessibilité)
+            <div>
+                <label><input type="radio" name="color" id="dt-color2"> Test 1 : couleur fond jaune vert
+                </label>
             </div>
-            <fieldset>
-                <legend>Couleur de fond</legend>
-                <div>
-                    <label><input type="radio" name="color" id="dt-color1" checked> Aucun
-                    </label>
-                </div>
-                <div>
-                    <label><input type="radio" name="color" id="dt-color2"> Test 1 : couleur fond jaune vert
-                    </label>
-                </div>
-                <div>
-                    <label><input type="radio" name="color" id="dt-color3"> Test 2 : couleur fond jaune vert
-                        (alternatif)
-                    </label>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Texte</legend>
-                <div>
-                    <label><input type="radio" name="text" id="dt-text1" checked> Noir
-                    </label>
-                </div>
-                <div><label>
-                        <input type="radio" name="text" id="dt-text2"> Test 1: Bleu foncé
-                    </label>
-                </div>
-                <div><label>
-                        <input type="radio" name="text" id="dt-text3"> Test 2: Vert
-                    </label>
-                </div>
-                <div><label>
-                        <input type="radio" name="text" id="dt-text4"> Test 3: Gris foncé
-                    </label>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Bouton</legend>
-                <div>
-                    <div>
-                        <label>
-                            <input type="radio" name="bouton" id="dt-bouton-1" checked> Couleur du texte
-                        </label>
-                    </div>
-                    <div>
-                        <label>
-                            <input type="radio" name="bouton" id="dt-bouton-2"> Test 1: Vert
-                        </label>
-                    </div>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Logo en-tête</legend>
+            <div>
+                <label><input type="radio" name="color" id="dt-color3"> Test 2 : couleur fond jaune vert (alternatif)
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Texte</legend>
+            <div>
+                <label><input type="radio" name="text" id="dt-text1" checked> Noir
+                </label>
+            </div>
+            <div><label>
+                    <input type="radio" name="text" id="dt-text2"> Test 1: Bleu foncé
+                </label>
+            </div>
+            <div><label>
+                    <input type="radio" name="text" id="dt-text3"> Test 2: Vert
+                </label>
+            </div>
+            <div><label>
+                    <input type="radio" name="text" id="dt-text4"> Test 3: Gris foncé
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Bouton</legend>
+            <div>
                 <div>
                     <label>
-                        <input type="radio" name="logo" id="dt-logo-1" checked>
-                        Logo 1
+                        <input type="radio" name="bouton" id="dt-bouton-1" checked> Couleur du texte
                     </label>
                 </div>
                 <div>
                     <label>
-                        <input type="radio" name="logo" id="dt-logo-2">
-                        Logo 2
+                        <input type="radio" name="bouton" id="dt-bouton-2"> Test 1: Vert
                     </label>
                 </div>
-                <div>
-                    <label>
-                        <input type="radio" name="logo" id="dt-logo-3">
-                        Logo 3
-                    </label>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Image fond début de page (section "hero")</legend>
-                <div>
-                    <label>
-                        <input type="radio" name="hero-fond" id="dt-hero-fond-1" checked>
-                        Option 1
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        <input type="radio" name="hero-fond" id="dt-hero-fond-2">
-                        Option 2
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        <input type="radio" name="hero-fond" id="dt-hero-fond-3">
-                        Option 3
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        <input type="radio" name="hero-fond" id="dt-hero-fond-4">
-                        Option 4
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        <input type="radio" name="hero-fond" id="dt-hero-fond-5">
-                        Option 5
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        <input type="radio" name="hero-fond" id="dt-hero-fond-6">
-                        Option 6
-                    </label>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Images additionnelles début de page (section "hero")</legend>
-                <div>
-                    <label>
-                        <input type="radio" name="hero-images" id="dt-hero-images-1" checked>
-                        Aucune
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        <input type="radio" name="hero-images" id="dt-hero-images-2">
-                        Droite décalé
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        <input type="radio" name="hero-images" id="dt-hero-images-3">
-                        Bas
-                    </label>
-                </div>
-                <div>
-                    <label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Logo en-tête</legend>
+            <div>
+                <label>
+                    <input type="radio" name="logo" id="dt-logo-1" checked>
+                    Logo 1
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="logo" id="dt-logo-2">
+                    Logo 2
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="logo" id="dt-logo-3">
+                    Logo 3
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Image fond début de page (section "hero")</legend>
+            <div>
+                <label>
+                    <input type="radio" name="hero-fond" id="dt-hero-fond-1" checked>
+                    Option 1
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="hero-fond" id="dt-hero-fond-2">
+                    Option 2
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="hero-fond" id="dt-hero-fond-3">
+                    Option 3
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="hero-fond" id="dt-hero-fond-4">
+                    Option 4
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="hero-fond" id="dt-hero-fond-5">
+                    Option 5
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="hero-fond" id="dt-hero-fond-6">
+                    Option 6
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Images additionnelles début de page (section "hero")</legend>
+            <div>
+                <label>
+                    <input type="radio" name="hero-images" id="dt-hero-images-1" checked>
+                    Aucune
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="hero-images" id="dt-hero-images-2">
+                    Droite décalé
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="hero-images" id="dt-hero-images-3">
+                    Bas
+                </label>
+            </div>
+            <div>
+                <label>
 
-                    </label>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Police d'écriture</legend>
-                <div>
-                    <label>
-                        <input type="radio" name="font" id="dt-font-1" checked> <a
-                            href="https://fonts.google.com/specimen/Montserrat">Montserrat</a>
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        <input type="radio" name="font" id="dt-font-2">
-                        <a href="https://www.luciole-vision.com/">Luciole</a>
-                        "Conçu spécifiquement pour les personnes malvoyantes. Le projet a bénéficié de l'appui du
-                        laboratoire
-                        DIPHE de l'Université Lumière Lyon 2."
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        <input type="radio" name="font" id="dt-font-3">
-                        Futura Light
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        <input type="radio" name="font" id="dt-font-4">
-                        Futura Regular
-                    </label>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Fleurs</legend>
-                <div>
-                    <label>
-                        <input type="radio" name="fleurs" id="dt-fleurs-1" checked>
-                        Pas de fleurs
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        <input type="radio" name="fleurs" id="dt-fleurs-2">
-                        Fleurs
-                    </label>
-                </div>
-            </fieldset>
-        </section>
-        <script>
-            for (let [name,] of new URLSearchParams(window.location.search)) {
-                console.log(document.getElementById(name));
-                document.getElementById(name).checked = true;;
-            }
-        </script>
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Police d'écriture</legend>
+            <div>
+                <label>
+                    <input type="radio" name="font" id="dt-font-1" checked> <a
+                        href="https://fonts.google.com/specimen/Montserrat">Montserrat</a>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="font" id="dt-font-2">
+                    <a href="https://www.luciole-vision.com/">Luciole</a>
+                    "Conçu spécifiquement pour les personnes malvoyantes. Le projet a bénéficié de l'appui du
+                    laboratoire
+                    DIPHE de l'Université Lumière Lyon 2."
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="font" id="dt-font-3">
+                    Futura Light
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="font" id="dt-font-4">
+                    Futura Regular
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Fleurs</legend>
+            <div>
+                <label>
+                    <input type="radio" name="fleurs" id="dt-fleurs-1" checked>
+                    Pas de fleurs
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="radio" name="fleurs" id="dt-fleurs-2">
+                    Fleurs
+                </label>
+            </div>
+        </fieldset>
+    </section>
+    <script>
+        for (let [name,] of new URLSearchParams(window.location.search)) {
+            console.log(document.getElementById(name));
+            document.getElementById(name).checked = true;;
+        }
+    </script>
 </body>
 
 </html>
