@@ -488,9 +488,11 @@ main {
 
 
 
-
-
-
+/* space between header and first content
+not for hero section otherwise ugly blank space between header and hero */
+main>:first-child:not(.hero) {
+    margin-top: 3rem;
+}
 
 main>section {
     padding-bottom: 5rem;
