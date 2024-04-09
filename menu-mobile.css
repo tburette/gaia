@@ -68,11 +68,11 @@
     #menuToggle input {
         display: block;
         width: 42px;
-        height: 34px;
+        height: 42px;
         /* requires #menuToggle to be non static */
         position: absolute;
-        top: -8px;
-        left: -6px;
+        top: -16px;
+        left: -2px;
 
         cursor: pointer;
 
