@@ -172,7 +172,7 @@ input {
 }
 
 
-/* hero tests */
+/* hero bg tests */
 :root:has(#dt-hero-fond-2:checked) .hero {
     background-image: url('jonathan-hanna-hvSBya7hX2Q-unsplash-medium.jpg');
 }
@@ -194,6 +194,93 @@ input {
     background-image: url('mosaic20230928_155621.jpg');
 
 }
+
+
+/* hero img tests */
+/* default */
+.hero__side {
+    display: none;
+}
+
+
+:root:has(#dt-hero-images-2:checked) .hero__content {
+    position: relative;
+    /* to be above hero__side. (hero__side must be positioned) */
+    z-index: 1;
+}
+
+:root:has(#dt-hero-images-2:checked) .hero__side {
+    display: block;
+    position: absolute;
+    top: calc(var(--menu-height) + 1rem);
+    right: 0px;
+}
+
+:root:has(#dt-hero-images-2:checked) .hero__side-image {
+    height: 21vh;
+    max-width: 30vw;
+    aspect-ratio: 1;
+    object-fit: cover;
+
+    margin-bottom: 2rem;
+
+    filter: blur(.9px);
+}
+
+:root:has(#dt-hero-images-2:checked) .hero__side-image:nth-child(2) {
+    margin-left: 1rem;
+}
+
+:root:has(#dt-hero-images-2:checked) .hero__side-image:nth-child(3) {
+    margin-left: 2rem;
+}
+
+
+
+
+:root:has(#dt-hero-images-3:checked) .hero__side {
+    display: block;
+    /* top: calc(var(--menu-height) + 1rem); */
+    /* right: 0px; */
+    position: absolute;
+    /* top NOT set. is positioned vertically where it would be without positioning*/
+    /* top:; */
+    left: 0px;
+    /* hack. Would be better to put the images in their own <section> */
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+:root:has(#dt-hero-images-3:checked) .hero {
+    margin-bottom: max(6rem);
+    /* margin-bottom: calc(-30rem + (20vh *2)); */
+}
+
+:root:has(#dt-hero-images-3:checked) .hero__side-image {
+    width: 25%;
+    max-height: 10rem;
+    /* aspect-ratio: 1; */
+    object-fit: cover;
+    /* clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); */
+    /* clip-path: polygon(25% 0, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%, 0% 25%); */
+    border: 10px solid white;
+    border-radius: 5px;
+}
+
+@media (max-width: 767px) {
+    :root:has(#dt-hero-images-3:checked) .hero__side .hero__side-image {
+        width: 33%;
+    }
+
+    :root:has(#dt-hero-images-3:checked) .hero__side .hero__side-image:nth-child(2) {
+        display: none;
+    }
+}
+
+
+
 
 /* font tests */
 :root:has(#dt-font-2:checked) {
@@ -346,7 +433,7 @@ main {
     position: fixed;
     background-color: var(--color-background);
     /* Avoid being under the backdrop-filter of the hero/title section*/
-    z-index: 1;
+    z-index: 2;
 }
 
 
@@ -458,13 +545,21 @@ main>section {
 }
 
 @media (max-width: 767px) {
-    .hero__content {
+    /* .hero__content {
         padding-inline: 1.5rem;
-    }
+    } */
 
     .hero__content span {
         align-self: center;
     }
+}
+
+
+html {
+    /* was needed for a hero section test : 
+    images with clipping to the right of the viewport
+     */
+    overflow-x: hidden;
 }
 
 
@@ -567,7 +662,7 @@ main>section {
     }
 }
 
-@media(max-width: 768px) {
+@media(max-width: 767px) {
     .main-card__content--rows-3>* {
         /* to replace the gap that only exist in desktop mode (see above) */
         margin: 1rem;
