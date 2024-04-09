@@ -422,7 +422,7 @@ main>section {
     background-attachment: fixed;
 }
 
-.title {
+.hero__content {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -433,7 +433,7 @@ main>section {
     /* backdrop-filter: blur(.5px) brightness(75%); */
 }
 
-.hero h1 {
+.hero__content h1 {
     font-size: calc(var(--fs-xxl) * 2);
     line-height: 1.1;
 
@@ -441,16 +441,16 @@ main>section {
     padding-top: 3rem;
 }
 
-.hero h2 {
+.hero__content h2 {
     font-size: var(--fs-bigger)
 }
 
-.hero .title {
+.hero__content {
     color: var(--hero-text-color);
     text-shadow: var(--text-shadow-black);
 }
 
-.title span {
+.hero__content span {
     font-size: var(--fs-normal);
     font-style: italic;
     margin-block: auto;
@@ -458,11 +458,11 @@ main>section {
 }
 
 @media (max-width: 767px) {
-    .title {
+    .hero__content {
         padding-inline: 1.5rem;
     }
 
-    .title span {
+    .hero__content span {
         align-self: center;
     }
 }
