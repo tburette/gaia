@@ -83,6 +83,8 @@
 
     background-color: var(--color-background);
 
+    --menu-height: 4rem;
+
     --hero-height: 66vh;
 
 }
@@ -321,17 +323,20 @@ main>*:not(.full-width) {
 }
 
 
+
+
 /* prevent top of content being hidden when clicking an internal link
 (for menu with position fixed) */
 html {
-    scroll-padding-top: 5rem;
+    scroll-padding-top: var(--menu-height);
 }
 
 main {
-    padding-top: 3.5em;
+    padding-top: var(--menu-height);
 }
 
 .header {
+    height: var(--menu-height);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -359,7 +364,6 @@ main {
 
     display: flex;
     align-items: center;
-    /* gap before 5.28px */
     gap: max(5px, 2vw - 1.9px);
     padding-inline: 1rem;
 }
