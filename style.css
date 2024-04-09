@@ -446,7 +446,6 @@ main>section {
 }
 
 .hero .title {
-    /* padding-left: 10vw; */
     color: var(--hero-text-color);
     text-shadow: var(--text-shadow-black);
 }
@@ -471,7 +470,6 @@ main>section {
 
 
 .derniere-actualite {
-    /* margin-inline: 1rem; */
     margin-block: 2rem;
 }
 
@@ -482,13 +480,11 @@ main>section {
 .derniere-actualite .attachment-post-thumbnail {
     width: 100%;
     aspect-ratio: 1;
-    /* margin-inline: auto; */
     margin-block: .25rem;
     object-fit: cover;
 }
 
 .actualite .plus-actualite {
-    /* margin-left: auto; */
     display: inline-block;
 }
 
@@ -540,12 +536,6 @@ main>section {
     .main-card__content {
         /* clearfix (creates a BFC) */
         display: flow-root;
-    }
-
-    .main-card__content {
-        /* display: flex; */
-        /* flex-direction: row-reverse; */
-        /* gap: 1rem; */
     }
 
     .main-card__image {
