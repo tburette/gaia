@@ -585,7 +585,7 @@ html {
     display: inline-block;
 }
 
-@media (min-width: 767px) {
+@media not (max-width: 767px) {
     .derniere-actualite {
         /* clearfix (creates a BFC) */
         display: flow-root;
@@ -627,7 +627,7 @@ html {
 }
 
 
-@media(min-width: 767px) {
+@media not (max-width: 767px) {
 
     .main-card,
     .main-card__content {
@@ -682,7 +682,7 @@ html {
     padding-block: 2em;
 }
 
-@media(min-width: 767px) {
+@media not (max-width: 767px) {
     .evenements-list {
         grid-template-columns: 1fr 1fr 1fr;
     }
