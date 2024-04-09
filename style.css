@@ -543,6 +543,7 @@ main>section {
         float: right;
         margin: 1em;
         margin-top: 0;
+        width: 300px;
     }
 
     /* must be below other main-card__content declaration otherwise will
