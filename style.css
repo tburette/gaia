@@ -578,11 +578,19 @@ main>section {
 
 .evenements-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 8em), 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(min(100%, 8em), 1fr)); */
+    grid-template-columns: 1fr 1fr;
     justify-items: stretch;
     gap: 1rem;
     padding-block: 2em;
 }
+
+@media(min-width: 767px) {
+    .evenements-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
 
 .evenement__image {
     min-width: 100%;
