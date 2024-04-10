@@ -950,6 +950,38 @@ https://www.youtube.com/watch?v=A5GXdjEOvos */
 
 
 
+/* don */
+/*  hello asso iframe is by default 750px tall with vertical scrollbar :(
+I attempted to have no scrollbar
+(similar to  https://www.lesagribains.org/faire-un-don/ )
+
+set scrolling="no" on <iframe>
+
+main problems : 
+- not possible to know the height of the page in the iframe
+(not possible with js : cross-origin restriction)
+- if arbitrary size risk of clipping the bottom of the content
+
+biggest height of the iframe content: 
+2644px (firefox mobile 375px viewport)
+2696px (chrome mobile 375 px viewport)
+helloasso layout breakpoint is at 900px
+
+observed (parent) window width at which the helloasso content shift to one column:
+1072px
+
+solution : scroll + hopefully tall enough in all situations
+ */
+#haWidget {
+    height: 2650px;
+}
+
+@media not (max-width: 1100px) {
+    #haWidget {
+        height: 1600px;
+    }
+}
+
 
 
 
