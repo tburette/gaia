@@ -973,7 +973,7 @@ observed (parent) window width at which the helloasso content shift to one colum
 solution : scroll + hopefully tall enough in all situations
  */
 #haWidget {
-    height: 2650px;
+    height: 2700px;
 }
 
 @media not (max-width: 1100px) {
