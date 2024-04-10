@@ -2,24 +2,52 @@
 /* if want to change the value: must change everywhere in this file and menu-mobile.css! */
 
 @font-face {
+    font-display: fallback;
     font-family: "Montserrat";
     src: url("Montserrat-VariableFont_wght.ttf");
 }
 
 @font-face {
+    font-display: fallback;
     font-family: "Luciole";
     src: url("Luciole-Regular.ttf");
 }
 
 @font-face {
+    font-display: fallback;
     font-family: FuturaRennerLight;
     src: url("FuturaRenner-Light.otf");
 }
 
 @font-face {
+    font-display: fallback;
     font-family: FuturaRennerRegular;
     src: url("FuturaRenner-Regular.otf");
 }
+
+
+@font-face {
+    font-display: block;
+    font-family: Roboto;
+    src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+}
+
+@font-face {
+    font-display: fallback;
+    font-family: Roboto;
+    font-weight: 600;
+    src: url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+}
+
+@font-face {
+    font-display: fallback;
+    font-family: Roboto;
+    font-weight: 700;
+    src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+}
+
+
+
 
 :root {
 
@@ -501,11 +529,12 @@ main>section {
 
 
 .hero {
-    /* background-image: url('jonathan-hanna-hvSBya7hX2Q-unsplash-medium.jpg'); */
-    /* background-image: url('markus-spiske-bk11wZwb9F4-unsplash-medium.jpg'); */
-    /* background-image: url('markus-winkler-HeqXGxnsnX4-unsplash-medium.jpg'); */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('jonathan-hanna-hvSBya7hX2Q-unsplash-medium.jpg'); */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('markus-spiske-bk11wZwb9F4-unsplash-medium.jpg'); */
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('markus-winkler-HeqXGxnsnX4-unsplash-medium.jpg'); */
     /* background-image: linear-gradient(to bottom, rgba(18, 42, 66, .85), rgba(18, 42, 66, .85)), url('markus-spiske-vCCeCZGcfSY-unsplash-medium.jpg'); */
-    background-image: url('markus-spiske-vCCeCZGcfSY-unsplash-medium.jpg');
+    /* background-image: url('markus-spiske-vCCeCZGcfSY-unsplash-medium.jpg'); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url('markus-spiske-vCCeCZGcfSY-unsplash-medium.jpg');
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -518,7 +547,7 @@ main>section {
     /* padding-left: clamp(1rem, 20vw, 1rem); */
     padding-left: clamp(1rem, 10000px, 10vw);
     min-height: var(--hero-height);
-    /* too dark? */
+    /* can be replaced by a linear-gradient() in the background-image */
     /* backdrop-filter: blur(.5px) brightness(75%); */
 }
 
@@ -536,7 +565,7 @@ main>section {
 
 .hero__content {
     color: var(--hero-text-color);
-    text-shadow: var(--text-shadow-black);
+    /* text-shadow: var(--text-shadow-black); */
 }
 
 .hero__content span {
