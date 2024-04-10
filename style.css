@@ -556,8 +556,10 @@ main>section {
 
 .hero__content h1 {
     font-size: calc(var(--fs-xxl) * 2);
+    font-weight: 200;
     line-height: 1.1;
 
+    margin-left: -.05em;
     margin-top: auto;
     padding-top: 3rem;
 }
