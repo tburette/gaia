@@ -391,7 +391,7 @@ a:active {
 main>*:not(.full-width) {
     /* use padding and not margin so that background-color extends to the
     full width */
-    padding-inline: max(1.1rem, 17vw - 6rem);
+    margin-inline: max(1.1rem, 17vw - 6rem);
 }
 
 .no-overflow {
@@ -523,7 +523,7 @@ main>:first-child:not(.hero) {
 }
 
 main>section {
-    padding-bottom: 5rem;
+    margin-bottom: 5rem;
 }
 
 
@@ -538,6 +538,9 @@ main>section {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+
+    /* fine-tuning. mainly for side images */
+    padding-bottom: 8em;
 }
 
 .hero__content {
@@ -579,6 +582,11 @@ main>section {
     /* .hero__content {
         padding-inline: 1.5rem;
     } */
+
+    .hero {
+        /* fine-tuning. mainly for side images */
+        padding-bottom: 5em;
+    }
 
     .hero__content span {
         align-self: center;
@@ -640,7 +648,7 @@ html {
 }
 
 .main-card {
-    padding-top: 2rem;
+    margin-top: 2rem;
 }
 
 .main-card__image {
@@ -948,6 +956,61 @@ https://www.youtube.com/watch?v=A5GXdjEOvos */
     margin-top: 4em;
 }
 
+
+.jardin {
+    background-color: var(--color-pale-yellow);
+    /* border-radius: 1rem; */
+    padding: 1.1rem;
+}
+
+.jardin>h3::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 5rem;
+    border-top: 2px solid;
+}
+
+.jardin__stats {
+    font-size: var(--fs-small);
+}
+
+.jardin__stats>* {
+    margin-right: 2em;
+    /* so it remains in a single line */
+    display: inline-block;
+}
+
+.jardin__stat-creation::before {
+    content: "★  ";
+}
+
+.jardin__stat-surface::before {
+    content: "⬤  ";
+}
+
+.jardin__content {
+    /* TODO responsive size? bigger on larger viewports? */
+    margin-inline: .75rem;
+}
+
+.jardin__content>*,
+.jardin__details>* {
+    margin-block: 2rem;
+}
+
+.jardin__details {
+    margin-top: 3rem;
+}
+
+.jardin__image {
+    width: 100%;
+}
+
+.jardin__location-image {
+    float: right;
+    margin-left: 1rem;
+}
 
 
 /* don */
